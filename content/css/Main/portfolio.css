@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  background-color: #DFDFDF;
+  padding: 5rem;
+}
+
+.container .wrapper {
+  border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 55% 25% 10%;
+      grid-template-columns: 10% 55% 25% 10%;
+  -ms-grid-rows: 118px 1fr 118px;
+      grid-template-rows: 118px 1fr 118px;
+      grid-template-areas: ". logo nav ." ". main main ." ". footer footer .";
+  background-image: -webkit-gradient(linear, left top, right top, from(#082142), to(#11386B));
+  background-image: linear-gradient(to right, #082142, #11386B);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container .wrapper .logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: logo;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container .wrapper .nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: nav;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+
+.container .wrapper .nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .wrapper .nav ul li a {
+  text-decoration: none;
+  color: #C0C0C0;
+}
+
+.container .wrapper .nav ul li a:hover {
+  color: #ffffff;
+}
+
+.container .wrapper .main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+}
+
+.container .wrapper .main .header h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.container .wrapper .main .blocks {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  height: inherit;
+  width: inherit;
+  grid-gap: 10px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.container .wrapper .main .blocks .block {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffffff;
+}
+
+.container .wrapper .main .blocks .block img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .wrapper .footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .wrapper .footer p {
+  color: #C0C0C0;
+}
+/*# sourceMappingURL=portfolio.css.map */

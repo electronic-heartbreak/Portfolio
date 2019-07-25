@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/Main/portfolio.css">
+    <script src="https://kit.fontawesome.com/c515fd5efd.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo.svg" alt="logo"></a>
+             </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <main class="main">
+                <div class="header">
+                    <h1>Portfolio</h1>
+                </div>
+                <section class="blocks" id="blocks">
+                </section>
+            </main>
+            
+            <footer class="footer">
+                <p>&copy; Bjorn Jaeken 2019</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        "use strict"
+        const list = [
+            {
+            Id: 1,
+            Name: 'Random Cat Facts',
+            Languages: ['C#'],
+            desc: 'all i ever hear from you is bla bla bla x100',
+            img: './img/items/catfacts.jpg',
+            link: 'https://github.com/bjaeken/CatFactsApp',
+            },
+            {
+            Id: 2,
+            Name: 'RekenGame',
+            Languages: ['React Native'],
+            desc: 'all i ever hear from you is bla bla bla x100',
+            img: './img/items/rekengame.jpg',
+            link: 'https://expo.io/@bjaeken/rekenspel',
+            },
+            {
+            Id: 3,
+            Name: 'RekenGame',
+            Languages: ['React Native'],
+            desc: 'all i ever hear from you is bla bla bla x100',
+            img: './img/items/rekengame.jpg',
+            link: 'https://expo.io/@bjaeken/rekenspel',
+            },
+            {
+            Id: 4,
+            Name: 'RekenGame',
+            Languages: ['React Native'],
+            desc: 'all i ever hear from you is bla bla bla x100',
+            img: './img/items/rekengame.jpg',
+            link: 'https://expo.io/@bjaeken/rekenspel',
+            }
+
+        ];
+
+            var doThaThing = () => {
+            const array = list;
+            const container = document.getElementById('blocks');
+            array.forEach(co => container.innerHTML +=
+                `
+                <div class="block">
+                    <a href="item.html">
+                        <img src="${co.img}" alt="${co.Name}">
+                    </a>
+                </div>
+                `
+            );
+        }
+        doThaThing();
+    </script>
+</body>
+
+</html>

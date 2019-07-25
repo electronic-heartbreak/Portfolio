@@ -1,0 +1,107 @@
+@import '../Base/reset';
+@import '../Base/base';
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.container {
+    background-color: $backgroundColor;
+    padding: 5rem;
+
+    .wrapper {
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 10% 55% 25% 10%;
+        grid-template-rows: 118px 1fr 118px;
+        grid-template-areas: 
+        ". logo nav ."
+        ". main main ."
+        ". footer footer .";
+        background-image: linear-gradient(to right, $linearLeft, $linearRight);
+        font-family: 'Montserrat', sans-serif; 
+
+        .logo {
+            grid-area: logo;
+            color: $primaryColor;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .nav {
+            grid-area: nav;
+            height: 100%;
+            display: grid;
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+
+                li a {
+                    text-decoration: none;
+                    color: $navUnactiveColor;
+
+                    &:hover {
+                        color: $primaryColor;
+                    }
+                }
+
+            }
+
+        }
+
+        .main {
+            grid-area: main;
+
+            .header h1 {
+                color: $primaryColor;
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            .blocks {
+                display: grid;
+                justify-items: center;
+                height: inherit;
+                width: inherit;
+                grid-gap: 10px;
+                grid-template-columns: repeat(3, 1fr);
+
+                .block {
+                    height: 100%;
+                    width: 100%;
+                    border: 3px solid $primaryColor;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    // &:hover {
+                    //     border: 3px solid gray;
+                    // }
+                }
+            }
+        }
+
+        
+        .footer {
+            grid-area: footer;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+            p {
+                color: $navUnactiveColor;
+            }
+        }
+    }
+}
