@@ -295,7 +295,12 @@ table {
 
 @media (max-width: 800px) {
   .container {
-    padding: 3rem;
+    padding: 0;
+  }
+  .container .wrapper {
+    border-radius: 0;
+    -ms-grid-rows: 118px 1fr 118px;
+        grid-template-rows: 118px 1fr 118px;
   }
   .container .wrapper .main .header h1 {
     font-size: 2.5rem;
@@ -305,6 +310,60 @@ table {
   }
   .container .wrapper .main .smalltext p {
     font-size: 0.9rem;
+    width: 70%;
+  }
+  .container .wrapper .section img {
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-top: 35%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0;
+  }
+  .container .wrapper {
+    border-radius: 0;
+    -ms-grid-rows: 118px 65% 118px;
+        grid-template-rows: 118px 65% 118px;
+  }
+  .container .wrapper .nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: nav;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+  }
+  .container .wrapper .nav ul li a {
+    font-size: 0.8rem;
+  }
+  .container .wrapper .main .header h1 {
+    font-size: 1.5rem;
+  }
+  .container .wrapper .main .subheader h6 {
+    font-size: 0.8rem;
+  }
+  .container .wrapper .main .smalltext p {
+    font-size: 0.8rem;
+    width: 70%;
+  }
+  .container .wrapper .main .link a {
+    font-size: 1rem;
+  }
+  .container .wrapper .section img {
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-top: 35%;
+  }
+  .container .wrapper .footer p {
+    font-size: 0.8rem;
+  }
+  .container .wrapper .footer1 .icon {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=index.css.map */
