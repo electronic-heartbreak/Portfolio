@@ -67,8 +67,8 @@ table {
   display: grid;
   -ms-grid-columns: 10% 25% 55% 10%;
       grid-template-columns: 10% 25% 55% 10%;
-  -ms-grid-rows: 20% 60% 20%;
-      grid-template-rows: 20% 60% 20%;
+  -ms-grid-rows: 118px 60% 118px;
+      grid-template-rows: 118px 60% 118px;
       grid-template-areas: ". logo nav ." ". section main ." ". footer1 footer .";
   background-image: -webkit-gradient(linear, left top, right top, from(#082142), to(#11386B));
   background-image: linear-gradient(to right, #082142, #11386B);
@@ -89,6 +89,10 @@ table {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.container .wrapper .logo img {
+  width: 80%;
 }
 
 .container .wrapper .nav {
@@ -118,7 +122,7 @@ table {
 }
 
 .container .wrapper .nav ul li {
-  margin-left: 37.5px;
+  margin-left: 37px;
 }
 
 .container .wrapper .nav ul li a {
@@ -141,17 +145,17 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-top: 40px;
 }
 
 .container .wrapper .main .header h1 {
   color: #ffffff;
   font-size: 3rem;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .container .wrapper .main .smalltext p {
@@ -163,7 +167,11 @@ table {
   line-height: 1.2;
 }
 
-.container .wrapper .main .anchor a {
+.container .wrapper .main .download-link {
+  margin-top: auto;
+}
+
+.container .wrapper .main .download-link a {
   background: none;
   text-transform: uppercase;
   text-decoration: none;
@@ -175,7 +183,7 @@ table {
   display: flex;
 }
 
-.container .wrapper .main .anchor a:after {
+.container .wrapper .main .download-link a:after {
   width: 0%;
   height: 1px;
   background: #ffd540;
@@ -187,11 +195,11 @@ table {
   transition: all .25s ease-in-out;
 }
 
-.container .wrapper .main .anchor a:hover:after {
+.container .wrapper .main .download-link a:hover:after {
   width: 100%;
 }
 
-.container .wrapper .main .anchor a .icon {
+.container .wrapper .main .download-link a .icon {
   font-size: 1rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -265,5 +273,12 @@ table {
   -webkit-transition: 1s ease-out;
   transition: 1s ease-out;
   /* CSS3 */
+}
+
+@media (max-width: 1200px) {
+  .container .wrapper {
+    -ms-grid-columns: 5% 30% 60% 5%;
+        grid-template-columns: 5% 30% 60% 5%;
+  }
 }
 /*# sourceMappingURL=about.css.map */
