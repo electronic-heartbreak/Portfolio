@@ -350,7 +350,7 @@
             display: grid;
             height: auto;
             grid-template-columns: 100%;
-            grid-template-rows: 10% 20% 1fr 10% 5%;
+            grid-template-rows: 10% 18% 1fr 10% 5%;
             grid-template-areas: 
             "nav"
             "main"
@@ -435,6 +435,32 @@
 
                 .header h1 {
                     font-size: 1.5rem;
+                }
+            }
+
+            .section {
+
+                #contactform {
+
+                    input, textarea {
+                        
+                        &::-webkit-input-placeholder {
+                            
+                            font-size: 0.75rem;
+                        }
+                        &::-moz-placeholder {
+                        
+                            font-size: 0.75rem;
+                        }
+                        &:-ms-input-placeholder {
+                        
+                            font-size: 0.75rem;
+                        }
+                        &::placeholder {
+                        
+                            font-size: 0.75rem;
+                        }
+                    }
                 }
             }
 

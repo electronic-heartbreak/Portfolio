@@ -415,8 +415,8 @@ table {
     height: auto;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 10% 20% 1fr 10% 5%;
-        grid-template-rows: 10% 20% 1fr 10% 5%;
+    -ms-grid-rows: 10% 18% 1fr 10% 5%;
+        grid-template-rows: 10% 18% 1fr 10% 5%;
         grid-template-areas: "nav" "main" "section" "footer1" "footer";
   }
   .container .wrapper .logo {
@@ -487,6 +487,18 @@ table {
   }
   .container .wrapper .main .header h1 {
     font-size: 1.5rem;
+  }
+  .container .wrapper .section #contactform input::-webkit-input-placeholder, .container .wrapper .section #contactform textarea::-webkit-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .container .wrapper .section #contactform input:-ms-input-placeholder, .container .wrapper .section #contactform textarea:-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .container .wrapper .section #contactform input::-ms-input-placeholder, .container .wrapper .section #contactform textarea::-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .container .wrapper .section #contactform input::placeholder, .container .wrapper .section #contactform textarea::placeholder {
+    font-size: 0.75rem;
   }
   .container .wrapper .footer p {
     font-size: 0.75em;
