@@ -455,9 +455,6 @@ table {
 }
 
 @media (max-width: 400px) {
-  .container {
-    padding: 0;
-  }
   .container .wrapper .nav ul li a {
     font-size: 0.75em;
   }
@@ -466,6 +463,9 @@ table {
   }
   .container .wrapper .main .subheader h6 {
     font-size: 1em;
+  }
+  .container .wrapper .main .smalltext {
+    margin: 0 5%;
   }
   .container .wrapper .main .smalltext p {
     text-align: center;
