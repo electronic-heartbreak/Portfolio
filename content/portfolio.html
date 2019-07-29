@@ -45,60 +45,6 @@
             </footer>
         </div>
     </div>
-
-    <script>
-        "use strict"
-        const list = [
-            {
-            Id: 1,
-            Name: 'Random Cat Facts',
-            Languages: ['C#'],
-            desc: 'all i ever hear from you is bla bla bla x100',
-            img: './img/items/catfacts.jpg',
-            link: 'https://github.com/bjaeken/CatFactsApp',
-            },
-            {
-            Id: 2,
-            Name: 'RekenGame',
-            Languages: ['React Native'],
-            desc: 'all i ever hear from you is bla bla bla x100',
-            img: './img/items/rekengame.jpg',
-            link: 'https://expo.io/@bjaeken/rekenspel',
-            },
-            {
-            Id: 3,
-            Name: 'RekenGame',
-            Languages: ['React Native'],
-            desc: 'all i ever hear from you is bla bla bla x100',
-            img: './img/items/rekengame.jpg',
-            link: 'https://expo.io/@bjaeken/rekenspel',
-            },
-            {
-            Id: 4,
-            Name: 'RekenGame',
-            Languages: ['React Native'],
-            desc: 'all i ever hear from you is bla bla bla x100',
-            img: './img/items/rekengame.jpg',
-            link: 'https://expo.io/@bjaeken/rekenspel',
-            }
-
-        ];
-
-            var doThaThing = () => {
-            const array = list;
-            const container = document.getElementById('blocks');
-            array.forEach(co => container.innerHTML +=
-                `
-                <div class="block">
-                    <a href="item.html">
-                        <img src="${co.img}" alt="${co.Name}">
-                    </a>
-                </div>
-                `
-            );
-        }
-        doThaThing();
-    </script>
+    <script src="js/items.js"></script>
 </body>
-
 </html>
