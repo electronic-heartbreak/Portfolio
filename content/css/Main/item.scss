@@ -13,7 +13,7 @@
         border-radius: 20px;
         display: grid;
         grid-template-columns: 10% 55% 25% 10%;
-        grid-template-rows: 20% 60% 20%;
+        grid-template-rows: 118px 60% 118px;
         grid-template-areas: 
         ". logo nav ."
         ". main section ."
@@ -26,7 +26,11 @@
             color: $primaryColor;
             display: flex;
             align-items: center;
-            justify-content: flex-start
+            justify-content: flex-start;
+
+            img {
+                width: 80%;
+            }
         }
 
         .nav {
@@ -40,7 +44,6 @@
                 align-items: center;
                 justify-content: space-between;
                 
-
                 li a {
                     text-decoration: none;
                     color: $navUnactiveColor;
@@ -49,27 +52,27 @@
                         color: $primaryColor;
                     }
                 }
-
             }
-
         }
 
         .main {
             grid-area: main;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
             align-items: flex-start;
+            margin-top: 20px;
 
             .header h1 {
                 color: $primaryColor;
                 font-size: 3rem;
                 font-weight: bold;
+                margin-bottom: 15px;
             }
 
             .subheader h6 {
                 color: $primaryColor;
                 font-size: 1.5rem;
+                margin-bottom: 15px;
             }
 
             .smalltext p {
@@ -77,6 +80,10 @@
                 flex-wrap: nowrap;
                 font-size: 1rem;
                 line-height: $lineHeight;
+            }
+
+            .link {
+                margin-top: auto;
             }
 
             .link a {
@@ -161,8 +168,312 @@
                     transition: 1s ease-out; /* CSS3 */
                 }
             }
-
         }
     }
 }
 
+@media (max-width: 1200px) {
+    .container {
+        
+        .wrapper {
+            grid-template-columns: 5% 60% 30% 5%;
+
+            .main {
+
+                .header h1 {
+                    margin-bottom: 15px;
+                }
+
+                .subheader h6 {
+                    margin-bottom: 15px;
+                }
+
+                .smalltext p {
+                    font-size: 0.9rem;
+                }
+            }
+
+            .section {
+
+                img {
+                    height: auto;
+                    object-fit: contain;
+                    margin-top: 15%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+
+        .wrapper {
+            grid-template-columns: 5% 50% 40% 5%;
+            
+            .main {
+
+                .smalltext p {
+                    color: $primaryColor;
+                    flex-wrap: nowrap;
+                    font-size: 0.9rem;
+                    line-height: $lineHeight;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 0;
+
+        .wrapper {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            grid-template-rows: 118px 1fr 118px;
+
+            .main {
+
+                .header h1 {
+                    font-size: 2.5rem;
+                }
+
+                .subheader h6 {
+                    font-size: 1.2rem;
+                }
+
+                .smalltext p {
+                    font-size: 1rem;
+                    width: 80%;
+                }
+            }
+
+            .section {
+
+                img {
+                    height: auto;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0;
+
+        .wrapper {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            grid-template-columns: 5% 46% 44% 5%;
+            grid-template-rows: 118px 65% 118px;
+
+            .nav {
+                grid-area: nav;
+                height: 100%;
+                display: grid;
+    
+                ul {
+                    
+                    li a {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .main {
+
+                .header h1 {
+                    font-size: 1.5rem;
+                }
+
+                .subheader h6 {
+                    font-size: 1.2rem;
+                }
+
+                .smalltext p {
+                    font-size: 0.9rem;
+                    width: 80%;
+                }
+
+                .link a {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .section {
+
+                img {
+                    height: auto;
+                    object-fit: contain;
+                    margin-top: 35%;
+                }
+            }
+
+            .footer {
+                
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .footer1 {
+    
+                .icon {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0;
+
+        .wrapper {
+            display: grid;
+            height: auto;
+            grid-template-columns: 100%;
+            grid-template-rows: 10% 30% 1fr 10% 5%;
+            grid-template-areas: 
+            "nav"
+            "section"
+            "main"
+            "footer1"
+            "footer";
+
+            .logo {
+                display: none;
+            }
+            .nav {
+                grid-area: nav;
+
+                ul {
+                    justify-content: space-evenly;
+
+                    li a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .section {
+                grid-area: section;
+                justify-self: center;
+               
+                img {
+                    object-fit: cover;
+                    border: 2px solid $primaryColor;
+                    border-radius: 50%;
+                    margin: unset;
+                    width: 200px;
+                }
+            }
+
+            .main {
+                grid-area: main;
+                align-items: center;
+
+                .header h1 {
+                    font-size: 2rem;
+                }
+
+                .subheader h6 {
+                    font-size: 1.5rem;
+                }
+
+                .smalltext p {
+                    text-align: center;
+                    font-size: 0.9rem;
+                    width: 100%;
+                }
+
+                .link {
+                    margin: auto 0;
+                }
+
+                .link a {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .footer {
+                grid-area: footer;
+                justify-content: center;
+            }
+
+            .footer1 {
+                grid-area: footer1;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+
+        .wrapper {
+
+            .nav {
+
+                ul {
+
+                    li a {
+                        font-size: 0.75em;
+                    }
+                }
+            }
+
+            .main {
+
+                .header h1 {
+                    font-size: 1.5rem;
+                }
+
+                .subheader h6 {
+                    font-size: 1em;
+                }
+
+                .smalltext {
+                    margin: 0 5%;
+                }
+
+                .smalltext p {
+                    text-align: center;
+                    font-size: 0.75em;
+                    width: 100%;
+                }
+
+                .link a {
+                    font-size: 1em;
+                }
+            }
+
+            .section {
+                img {
+                    width: 175px;
+                }
+            }
+
+            .footer {
+                
+                p {
+                    font-size: 0.75em;
+                }
+            }
+
+            .footer1 {
+    
+                .icon {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
