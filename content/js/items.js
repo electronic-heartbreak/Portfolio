@@ -4,7 +4,7 @@ let itemheader = document.querySelector("#itemheader");
 let itemsubheader = document.querySelector("#itemsubheader");
 let itemsmalltext = document.querySelector("#itemsmalltext");
 let itemimage = document.querySelector("#itemimage");
-const itemlinks = document.querySelector('.footer1');
+let itemlinks = document.querySelector('.footer1');
 
     const list = [
         {
