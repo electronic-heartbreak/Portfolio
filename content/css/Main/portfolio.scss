@@ -1,11 +1,6 @@
 @import '../Base/reset';
 @import '../Base/base';
 
-body::-webkit-scrollbar {
-    display: none;
-}
-
-
 .container {
     background-color: $backgroundColor;
     padding: 5rem;
@@ -30,6 +25,10 @@ body::-webkit-scrollbar {
             display: flex;
             align-items: center;
             justify-content: flex-start;
+
+            img {
+                width: 80%;
+            }
         }
 
         .nav {
@@ -43,7 +42,6 @@ body::-webkit-scrollbar {
                 align-items: center;
                 justify-content: space-between;
                 
-
                 li a {
                     text-decoration: none;
                     color: $navUnactiveColor;
@@ -52,47 +50,31 @@ body::-webkit-scrollbar {
                         color: $primaryColor;
                     }
                 }
-
             }
-
         }
 
         .main {
             grid-area: main;
+            display: grid;
+            justify-items: center;
+            height: inherit;
+            width: inherit;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
 
-            .header h1 {
-                color: $primaryColor;
-                font-size: 3rem;
-                font-weight: bold;
-            }
+            .block {
+                height: 100%;
+                width: 100%;
+                border: 3px solid $primaryColor;
 
-            .blocks {
-                display: grid;
-                justify-items: center;
-                height: inherit;
-                width: inherit;
-                grid-gap: 10px;
-                grid-template-columns: repeat(3, 1fr);
-
-                .block {
+                img {
                     height: 100%;
                     width: 100%;
-                    border: 3px solid $primaryColor;
-
-                    img {
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-                    }
-
-                    // &:hover {
-                    //     border: 3px solid gray;
-                    // }
+                    object-fit: cover;
                 }
-            }
+            } 
         }
 
-        
         .footer {
             grid-area: footer;
             display: flex;
@@ -101,6 +83,139 @@ body::-webkit-scrollbar {
             
             p {
                 color: $navUnactiveColor;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        
+        .wrapper {
+            grid-template-columns: 5% 60% 30% 5%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+
+        .wrapper {  
+            grid-template-columns: 5% 50% 40% 5%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 0;
+
+        .wrapper {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+
+            .main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+
+        .wrapper {
+            grid-template-columns: 5% 46% 44% 5%;
+            grid-template-rows: 118px 1fr 59px;
+
+            .nav {
+                grid-area: nav;
+                height: 100%;
+                display: grid;
+    
+                ul {
+                    
+                    li a {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .footer {
+                
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 74.5px 1fr 32px;
+            grid-template-areas: 
+            "nav"
+            "main"
+            "footer";
+
+            .logo {
+                display: none;
+            }
+
+            .nav {
+                grid-area: nav;
+
+                ul {
+                    justify-content: space-evenly;
+
+                    li a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .main {
+                grid-area: main;
+                grid-template-columns: repeat(1, 1fr);
+                margin-left: 5%; 
+                margin-right: 5%; 
+                align-items: center;
+            }
+
+            .footer {
+                grid-area: footer;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+
+        .wrapper {
+
+            .nav {
+
+                ul {
+
+                    li a {
+                        font-size: 0.75em;
+                    }
+                }
+            }
+
+            .footer {
+                
+                p {
+                    font-size: 0.75em;
+                }
             }
         }
     }
