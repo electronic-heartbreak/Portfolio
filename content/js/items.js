@@ -31,7 +31,6 @@ const itemlinks = document.querySelector('.footer1');
         img: './img/items/rekengame.jpg',
         link: ['https://expo.io/@bjaeken/rekenspel'],
         },
-
     ];
 
     let LoopItems = () => {
@@ -51,10 +50,10 @@ const itemlinks = document.querySelector('.footer1');
     const GetInfo = (number) => {
         let queryString = "item=" + number;
         let usp = new URLSearchParams(queryString);
-        window.location = '/content/item.html?'+usp;
+        window.location = '../content/item.html?'+usp;
     }
 
-    if (window.location.href.includes("/content/item.html")) {
+    if (window.location.href.includes("item=")) {
         const ShowInfo = () => {
             const getusp = new URLSearchParams(window.location.search);
             const number = getusp.get('item');
