@@ -53,7 +53,7 @@ const itemlinks = document.querySelector('.footer1');
         window.location = location.pathname+"?"+usp;
     }
 
-    if (window.location.href.includes("/item.html")) {
+    if (window.location.href.includes("item=")) {
         const ShowInfo = () => {
             const getusp = new URLSearchParams(window.location.search);
             const number = getusp.get('item');
