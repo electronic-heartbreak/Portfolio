@@ -103,7 +103,7 @@
                     content: '';
                     position: absolute;
                     left: 0;
-                    bottom: 0px;
+                    bottom: -5px;
                     -webkit-transition: all .25s ease-in-out;
                     -moz-transition: all .25s ease-in-out;
                     -ms-transition: all .25s ease-in-out;
@@ -206,11 +206,11 @@
                 
                 &:hover {
                     color: $secondaryColor;
-                    -webkit-transition: 1s; /* WebKit */
-                    -moz-transition: 1s; /* Mozilla */
-                    -o-transition: 1s; /* Opera */
-                    -ms-transition: 1s; /* Internet Explorer */
-                    transition: 1s ease-out; /* CSS3 */
+                    -webkit-transition: 0.3s; /* WebKit */
+                    -moz-transition: 0.3s; /* Mozilla */
+                    -o-transition: 0.3s; /* Opera */
+                    -ms-transition: 0.3s; /* Internet Explorer */
+                    transition: 0.3s ease-out; /* CSS3 */
                 }
             } 
         }

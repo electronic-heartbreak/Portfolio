@@ -187,7 +187,7 @@ table {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0px;
+  bottom: -5px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
 }
@@ -307,13 +307,13 @@ table {
 
 .container .wrapper .footer1 .icon:hover {
   color: #ffd540;
-  -webkit-transition: 1s;
+  -webkit-transition: 0.3s;
   /* WebKit */
   /* Mozilla */
   /* Opera */
   /* Internet Explorer */
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
   /* CSS3 */
 }
 

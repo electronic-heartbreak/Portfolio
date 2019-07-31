@@ -134,7 +134,7 @@ table {
   justify-items: center;
   height: inherit;
   width: inherit;
-  grid-gap: 10px;
+  grid-gap: 30px;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
@@ -150,6 +150,10 @@ table {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.container .wrapper .main .block:hover {
+  cursor: pointer;
 }
 
 .container .wrapper .footer {

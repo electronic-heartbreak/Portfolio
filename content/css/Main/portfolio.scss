@@ -59,7 +59,7 @@
             justify-items: center;
             height: inherit;
             width: inherit;
-            grid-gap: 10px;
+            grid-gap: 30px;
             grid-template-columns: repeat(3, 1fr);
 
             .block {
@@ -71,6 +71,10 @@
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
+                }
+
+                &:hover {
+                    cursor: pointer;
                 }
             } 
         }
