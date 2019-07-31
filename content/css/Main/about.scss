@@ -65,13 +65,13 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            margin-top: 40px;
+            margin-top: 20px;
 
             .header h1 {
                 color: $primaryColor;
                 font-size: 3rem;
                 font-weight: bold;
-                margin-bottom: 30px;
+                margin-bottom: 15px;
             }
 
             .smalltext p {
@@ -183,6 +183,281 @@
             //         }
             //     }
             // }
+
+            .main {
+
+                .header h1 {
+                    margin-bottom: 15px;
+                }
+
+                .smalltext p {
+                    font-size: 0.9rem;
+                }
+            }
+
+            .section {
+
+                img {
+                    height: auto;
+                    object-fit: contain;
+                    margin-top: 15%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+
+        .wrapper {
+            
+            grid-template-columns: 5% 40% 50% 5%;
+            
+            .main {
+
+                .smalltext p {
+                    color: $primaryColor;
+                    flex-wrap: nowrap;
+                    font-size: 0.9rem;
+                    line-height: $lineHeight;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 0;
+
+        .wrapper {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            grid-template-rows: 118px 1fr 118px;
+
+            .main {
+
+                .header h1 {
+                    font-size: 2.5rem;
+                }
+
+                .smalltext p {
+                    font-size: 1rem;
+                }
+            }
+
+            .section {
+
+                img {
+                    height: auto;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0;
+
+        .wrapper {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            grid-template-columns: 5% 44% 46% 5%;
+            grid-template-rows: 118px 65% 118px;
+
+            .nav {
+                grid-area: nav;
+                height: 100%;
+                display: grid;
+    
+                ul {
+                    
+                    li a {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .main {
+
+                .header h1 {
+                    font-size: 1.5rem;
+                }
+
+                .smalltext p {
+                    font-size: 0.9rem;
+                }
+
+                .download-link a {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .section {
+
+                img {
+                    height: auto;
+                    object-fit: contain;
+                    margin-top: 35%;
+                }
+            }
+
+            .footer {
+                
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .footer1 {
+    
+                .icon {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0;
+
+        .wrapper {
+            display: grid;
+            height: auto;
+            grid-template-columns: 100%;
+            grid-template-rows: 10% 30% 1fr 10% 5%;
+            grid-template-areas: 
+            "nav"
+            "section"
+            "main"
+            "footer1"
+            "footer";
+
+            .logo {
+                display: none;
+            }
+            .nav {
+                grid-area: nav;
+                justify-content: unset;
+
+                ul {
+                    justify-content: space-evenly;
+                    
+                    li {
+                        margin: unset;
+                    }
+
+                    li a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .section {
+                grid-area: section;
+                justify-self: center;
+               
+                img {
+                    object-fit: cover;
+                    border: 2px solid $primaryColor;
+                    border-radius: 50%;
+                    margin: unset;
+                    width: 200px;
+                }
+            }
+
+            .main {
+                grid-area: main;
+                align-items: center;
+
+                .header h1 {
+                    font-size: 2rem;
+                }
+
+                .smalltext p {
+                    text-align: center;
+                    font-size: 1rem;
+                    width: 100%;
+                }
+
+                .download-link {
+                    margin: auto 0;
+                }
+
+                .download-link a {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .footer {
+                grid-area: footer;
+                justify-content: center;
+            }
+
+            .footer1 {
+                grid-area: footer1;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+
+        .wrapper {
+
+            .nav {
+
+                ul {
+
+                    li a {
+                        font-size: 0.75em;
+                    }
+                }
+            }
+
+            .main {
+
+                .header h1 {
+                    font-size: 1.5rem;
+                }
+
+                .smalltext {
+                    margin: 0 5%;
+                }
+
+                .smalltext p {
+                    text-align: center;
+                    font-size: 0.75em;
+                    width: 100%;
+                }
+
+                .link a {
+                    font-size: 1em;
+                }
+            }
+
+            .footer {
+                
+                p {
+                    font-size: 0.75em;
+                }
+            }
+
+            .footer1 {
+    
+                .icon {
+                    font-size: 1em;
+                }
+            }
         }
     }
 }
