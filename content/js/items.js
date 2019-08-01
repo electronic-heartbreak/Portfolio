@@ -50,14 +50,18 @@ let itemlinks = document.querySelector('.footer1');
     const GetInfo = (number) => {
         let queryString = "item=" + number;
         let usp = new URLSearchParams(queryString);
-        window.location = location.pathname+"?"+usp;
+        //window.location = location.pathname+"?"+usp;
+        window.location = "/item.html?"+usp;
+
     }
 
     if (window.location.href.includes("item")) {
+        console.log("1");
         const ShowInfo = () => {
             const getusp = new URLSearchParams(window.location.search);
             const number = getusp.get('item');
             const result = list.find(list => list.Id === parseInt(number));
+            console.log("2");
             itemheader.innerHTML = result.Name;
             itemsubheader.innerHTML = result.Languages;
             itemsmalltext.innerHTML = result.desc
@@ -68,7 +72,7 @@ let itemlinks = document.querySelector('.footer1');
                 <a href="${rs}" class="icon"><i class="fas fa-external-link-alt"></i></a>
                 `
             );
-            
+            console.log("3");
         }  
         ShowInfo();
     }
