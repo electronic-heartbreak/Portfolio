@@ -130,6 +130,10 @@ table {
   color: #C0C0C0;
 }
 
+.container .wrapper .nav ul li a.active {
+  color: #ffffff;
+}
+
 .container .wrapper .nav ul li a:hover {
   color: #ffffff;
 }
@@ -305,6 +309,9 @@ table {
         flex-wrap: nowrap;
     font-size: 0.9rem;
     line-height: 1.2;
+  }
+  .container .wrapper .main .smalltext p br {
+    display: none;
   }
 }
 

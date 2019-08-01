@@ -53,6 +53,10 @@
                     text-decoration: none;
                     color: $navUnactiveColor;
                     
+                    &.active {
+                        color: $primaryColor;
+                    }
+
                     &:hover {
                         color: $primaryColor;
                     }
@@ -221,6 +225,10 @@
                     flex-wrap: nowrap;
                     font-size: 0.9rem;
                     line-height: $lineHeight;
+
+                    br {
+                        display: none;
+                    }
                 }
             }
         }

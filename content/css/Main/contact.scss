@@ -49,6 +49,10 @@
                     text-decoration: none;
                     color: $navUnactiveColor;
 
+                    &.active {
+                        color: $primaryColor;
+                    }
+
                     &:hover {
                         color: $primaryColor;
                     }
@@ -164,7 +168,6 @@
                    
 
                     .icon {
-                        font-size: 1rem;
                         align-self: center;
                         border-left: 15px solid transparent;
                     }

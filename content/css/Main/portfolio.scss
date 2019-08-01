@@ -46,6 +46,10 @@
                     text-decoration: none;
                     color: $navUnactiveColor;
 
+                    &.active {
+                        color: $primaryColor;
+                    }
+
                     &:hover {
                         color: $primaryColor;
                     }
@@ -75,6 +79,7 @@
 
                 &:hover {
                     cursor: pointer;
+                    border: solid $secondaryColor;
                 }
             } 
         }

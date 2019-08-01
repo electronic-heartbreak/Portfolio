@@ -48,6 +48,10 @@
                     text-decoration: none;
                     color: $navUnactiveColor;
 
+                    &.active {
+                        color: $primaryColor;
+                    }
+
                     &:hover {
                         color: $primaryColor;
                     }
@@ -222,6 +226,10 @@
                 .smalltext p {
                     font-size: 1rem;
                     width: 70%;
+                    
+                    br {
+                        display: none;
+                    }
                 }
             }
 
