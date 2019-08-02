@@ -281,7 +281,7 @@ table {
 
 @media (max-width: 400px) {
   .container .wrapper .nav ul li a {
-    font-size: 0.75em;
+    font-size: 0.9em;
   }
   .container .wrapper .footer p {
     font-size: 0.75em;

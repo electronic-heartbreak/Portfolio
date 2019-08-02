@@ -353,7 +353,7 @@
             display: grid;
             height: auto;
             grid-template-columns: 100%;
-            grid-template-rows: 10% 15% 1fr 10% 5%;
+            grid-template-rows: 15% 15% 1fr 10% 5%;
             grid-template-areas: 
             "nav"
             "main"
@@ -435,7 +435,7 @@
                 ul {
 
                     li a {
-                        font-size: 0.75em;
+                        font-size: 0.9em;
                     }
                 }
             }
