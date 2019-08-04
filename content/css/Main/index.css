@@ -466,7 +466,7 @@ table {
 
 @media (max-width: 400px) {
   .container .wrapper {
-    height: 200vh;
+    height: 105vh;
   }
   .container .wrapper .nav ul li a {
     font-size: 0.9em;
