@@ -11,9 +11,7 @@ if (document.querySelector('.footer-text') != null) {
 if (document.querySelector('.nav') != null) {
     const setActive = () => {
         const items = document.querySelector('.nav').getElementsByTagName('a');
-        console.log(items);
         for (let i = 0; i < items.length; i++) {
-            console.log(document.location.href.includes(items[i].href));
             if (document.location.href.includes(items[i].href) > 0) {
                 items[i].classList.add('active');
             }

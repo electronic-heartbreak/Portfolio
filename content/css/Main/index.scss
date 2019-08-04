@@ -331,6 +331,7 @@
             "footer1"
             "footer";
 
+
             .logo {
                 display: none;
             }
@@ -399,10 +400,12 @@
     }
 }
 
+
 @media (max-width: 400px) {
     .container {
 
         .wrapper {
+            height: 200vh;
 
             .nav {
 
