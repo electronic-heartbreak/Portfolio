@@ -353,7 +353,7 @@
             display: grid;
             height: auto;
             grid-template-columns: 100%;
-            grid-template-rows: 15% 15% 1fr 10% 5%;
+            grid-template-rows: 15% 10% 1fr 10% 5%;
             grid-template-areas: 
             "nav"
             "main"
@@ -429,7 +429,7 @@
     .container {
 
         .wrapper {
-
+            height: 105vh;
             .nav {
 
                 ul {

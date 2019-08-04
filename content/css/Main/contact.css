@@ -418,8 +418,8 @@ table {
     height: auto;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 15% 15% 1fr 10% 5%;
-        grid-template-rows: 15% 15% 1fr 10% 5%;
+    -ms-grid-rows: 15% 10% 1fr 10% 5%;
+        grid-template-rows: 15% 10% 1fr 10% 5%;
         grid-template-areas: "nav" "main" "section" "footer1" "footer";
   }
   .container .wrapper .logo {
@@ -488,6 +488,9 @@ table {
 }
 
 @media (max-width: 400px) {
+  .container .wrapper {
+    height: 105vh;
+  }
   .container .wrapper .nav ul li a {
     font-size: 0.9em;
   }
