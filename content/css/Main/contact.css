@@ -54,6 +54,10 @@ table {
   border-spacing: 0;
 }
 
+.bs {
+  display: none;
+}
+
 .container {
   height: 100vh;
   background-color: #DFDFDF;

@@ -2,6 +2,9 @@
 @import '../Base/base';
 @import '../Main/browsers';
 
+.bs {
+    display: none;
+}
 
 .container {
     background-color: $backgroundColor;

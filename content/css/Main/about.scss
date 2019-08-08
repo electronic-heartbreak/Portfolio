@@ -2,6 +2,10 @@
 @import '../Base/base';
 @import '../Main/browsers';
 
+.bs {
+    display: none;
+}
+
 .container {
     height: 100vh;
     background-color: $backgroundColor;
