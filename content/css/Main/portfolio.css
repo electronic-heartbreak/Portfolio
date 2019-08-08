@@ -181,6 +181,32 @@ table {
   color: #C0C0C0;
 }
 
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  .bs {
+    display: block;
+    height: 100%;
+  }
+  span {
+    font-weight: bold;
+  }
+  .container {
+    display: none;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  .bs {
+    display: block;
+    height: 100%;
+  }
+  span {
+    font-weight: bold;
+  }
+  .container {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
   .container .wrapper {
     -ms-grid-columns: 5% 60% 30% 5%;

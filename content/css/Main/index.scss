@@ -1,6 +1,10 @@
 @import '../Base/reset';
 @import '../Base/base';
+@import '../Main/browsers';
 
+.bs {
+    display: none;
+}
 .container {
     height: 100vh;
     background-color: $backgroundColor;
@@ -173,6 +177,22 @@
         }
     }
 }
+
+///////////////////////////////////////
+///////////////////////////////////////
+/////////////////////////////////////// 
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+    @include browsers;
+}
+
+@supports (-ms-ime-align:auto) {
+    @include browsers;
+}
+
+///////////////////////////////////////
+///////////////////////////////////////
+/////////////////////////////////////// 
 
 @media (max-width: 1200px) {
     .container {

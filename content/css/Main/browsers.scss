@@ -1,0 +1,14 @@
+@mixin browsers {
+    .bs {
+        display: block;
+        height: 100%;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    .container {
+        display: none;
+    }
+}

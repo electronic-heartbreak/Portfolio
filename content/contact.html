@@ -16,11 +16,20 @@
 </head>
 
 <body>
+    <!--[if gte IE 6]>
+        <link rel="stylesheet" href="css/Main/browsers.css">
+        <p>You are using an <span>outdated</span> browser. Please <a href="https://www.google.com/intl/en/chrome/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="bs">
+        <p>You are using an <span>outdated</span> browser. Please
+            <a href="https://www.google.com/intl/en/chrome/">upgrade your browser</a> to improve your experience.</p>
+    </div>
+
     <div class="container">
         <div class="wrapper">
             <div class="logo">
                 <a href="index.html"><img src="./img/logo.svg" alt="logo"></a>
-             </div>
+            </div>
             <nav class="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -42,7 +51,7 @@
                         or by sending a message to one of my <b>socials</b>.</br>
                         I strive to message back as soon as possible.</br>
                         I would like to hear from you!</br>
-                    </br>
+                        </br>
                         Bjorn.
                     </p>
                 </div>
@@ -59,7 +68,7 @@
                         <input type="text" name="fullname" id="fullname" placeholder="John Doe" required>
                     </fieldset>
                     <fieldset>
-                            <label for="phonenum">Phone number</label>
+                        <label for="phonenum">Phone number</label>
                     </fieldset>
                     <fieldset>
                         <input type="text" name="phonenumber" id="phonenum" placeholder="0634567890" required>
@@ -71,19 +80,20 @@
                         <input type="email" name="email" id="mail" placeholder="johndoe@gmail.com" required>
                     </fieldset>
                     <fieldset>
-                            <label for="message">Message</label>
+                        <label for="message">Message</label>
                     </fieldset>
                     <fieldset>
-                        <textarea style="resize: none;" name="message" placeholder="Text in here" id="message" required></textarea>
+                        <textarea style="resize: none;" name="message" placeholder="Text in here" id="message"
+                            required></textarea>
                     </fieldset>
                     <fieldset>
                         <button type="submit">Submit <i class="fas fa-paper-plane icon"></i></button>
-                    </fieldset>               
-                </form> 
+                    </fieldset>
+                </form>
             </section>
             <footer class="footer">
-                    <p class="footer-text">
-                    </p>
+                <p class="footer-text">
+                </p>
             </footer>
             <footer class="footer1">
                 <a href="https://www.facebook.com" class="icon"><i class="fab fa-facebook-f"></i></a>

@@ -54,6 +54,10 @@ table {
   border-spacing: 0;
 }
 
+.bs {
+  display: none;
+}
+
 .container {
   height: 100vh;
   background-color: #DFDFDF;
@@ -274,6 +278,32 @@ table {
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
   /* CSS3 */
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  .bs {
+    display: block;
+    height: 100%;
+  }
+  span {
+    font-weight: bold;
+  }
+  .container {
+    display: none;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  .bs {
+    display: block;
+    height: 100%;
+  }
+  span {
+    font-weight: bold;
+  }
+  .container {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
