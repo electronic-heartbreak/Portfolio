@@ -275,8 +275,8 @@ table {
   /* Mozilla */
   /* Opera */
   /* Internet Explorer */
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   /* CSS3 */
 }
 
